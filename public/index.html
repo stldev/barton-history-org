@@ -4,155 +4,905 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Barton History | Local History, Research, and Stories</title>
+  <title>Dad's Life From Birth to Marriage | Barton History</title>
   <meta
     name="description"
-    content="Barton History preserves and shares local history through research, stories, records, and historical resources from Barton and the surrounding community."
+    content="Read 'Dad's Life from Birth to Marriage,' a Barton History family memoir written in Winter 2002 about childhood in St. Louis, Gardenville, family life, and mid-century America."
   >
   <meta
     name="keywords"
-    content="Barton History, Barton local history, community history, historical research, archives, genealogy, local records"
+    content="Barton History, family memoir, St. Louis history, Gardenville history, Dad's life from birth to marriage, Winter 2002 memoir, local history"
   >
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Barton History">
-  <meta name="theme-color" content="#f4efe4">
+  <meta name="theme-color" content="#e7d8bb">
   <link rel="canonical" href="https://barton-history.org/">
 
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://barton-history.org/">
   <meta property="og:site_name" content="Barton History">
-  <meta property="og:title" content="Barton History | Local History, Research, and Stories">
+  <meta property="og:title" content="Dad's Life From Birth to Marriage | Barton History">
   <meta
     property="og:description"
-    content="Explore local history, historical research, records, and community stories from Barton."
+    content="A family memoir written in Winter 2002, preserving memories of childhood, home, work, play, and growing up in a very different America."
   >
   <meta property="og:locale" content="en_US">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Barton History | Local History, Research, and Stories">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dad's Life From Birth to Marriage | Barton History">
   <meta
     name="twitter:description"
-    content="Explore local history, historical research, records, and community stories from Barton."
+    content="A family memoir written in Winter 2002, preserving memories of childhood, home, work, play, and growing up in a very different America."
   >
 
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Barton History",
-      "url": "https://barton-history.org/",
-      "description": "Barton History preserves and shares local history through research, stories, records, and historical resources from Barton and the surrounding community.",
+      "@type": "Article",
+      "headline": "Dad's Life from Birth to Marriage",
+      "alternativeHeadline": "Winter of 2002",
+      "author": {
+        "@type": "Person",
+        "name": "Unknown"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "Barton History",
         "url": "https://barton-history.org/"
-      }
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Barton History",
+        "url": "https://barton-history.org/"
+      },
+      "url": "https://barton-history.org/",
+      "inLanguage": "en-US",
+      "genre": [
+        "Memoir",
+        "Family History",
+        "Local History"
+      ],
+      "description": "A family memoir written in Winter 2002 about childhood, home life, and growing up in and around St. Louis and Gardenville."
     }
   </script>
 
   <style>
     :root {
+      --paper: #f7f0e2;
+      --paper-deep: #ead7b6;
+      --ink: #1f1b17;
+      --muted: #64584a;
+      --accent: #8c4f2c;
+      --accent-dark: #5e3117;
+      --line: rgba(63, 43, 28, 0.18);
+      --shadow: 0 18px 60px rgba(42, 24, 10, 0.12);
       color-scheme: light;
-      --bg: #f8f4ec;
-      --panel: #fffdf8;
-      --text: #1f1a14;
-      --muted: #5e5345;
-      --border: #d8cdbd;
-      --accent: #7a4b1f;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
+      color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
-      background: linear-gradient(180deg, #f6f1e6 0%, #fbf8f2 100%);
-      color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
+      background:
+        radial-gradient(circle at top, rgba(255, 248, 230, 0.95), rgba(247, 240, 226, 0.96) 35%, rgba(235, 220, 192, 0.98) 100%),
+        linear-gradient(180deg, #f3e7d0 0%, #f8f2e7 100%);
     }
 
-    main {
-      max-width: 760px;
+    a {
+      color: var(--accent-dark);
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 64px 24px;
     }
 
-    section {
-      background: rgba(255, 253, 248, 0.94);
-      border: 1px solid var(--border);
-      padding: 32px;
+    .hero {
+      padding: 48px 0 28px;
     }
 
-    h1,
-    h2 {
-      line-height: 1.2;
-      margin: 0 0 16px;
+    .masthead {
+      display: grid;
+      gap: 28px;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      align-items: end;
     }
 
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
+    .hero-copy {
+      padding: 40px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255, 252, 244, 0.96), rgba(247, 238, 223, 0.96)),
+        repeating-linear-gradient(
+          0deg,
+          rgba(94, 49, 23, 0.03) 0,
+          rgba(94, 49, 23, 0.03) 1px,
+          transparent 1px,
+          transparent 34px
+        );
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
     }
 
-    h2 {
-      font-size: 1.35rem;
-      margin-top: 32px;
-    }
-
-    p {
-      margin: 0 0 16px;
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(140, 79, 44, 0.12);
+      pointer-events: none;
     }
 
     .eyebrow {
       display: inline-block;
-      margin-bottom: 12px;
-      color: var(--accent);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+      margin: 0 0 12px;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
     }
 
-    .status {
-      margin-top: 24px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
+    h1,
+    h2,
+    h3 {
+      line-height: 1.08;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.6rem);
+      max-width: 9ch;
+      text-wrap: balance;
+    }
+
+    .subtitle {
+      margin: 16px 0 18px;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    .lede {
+      margin: 0;
+      font-size: 1.05rem;
+      max-width: 64ch;
+    }
+
+    .hero-meta {
+      display: grid;
+      gap: 16px;
+      align-self: stretch;
+    }
+
+    .meta-card,
+    .quote-card,
+    .panel,
+    .story-page {
+      border: 1px solid var(--line);
+      background: rgba(255, 252, 246, 0.88);
+      box-shadow: var(--shadow);
+    }
+
+    .meta-card {
+      padding: 24px;
+      display: grid;
+      gap: 18px;
+      align-content: start;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .meta-value {
+      font-size: 1.05rem;
+    }
+
+    .quote-card {
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(253, 247, 235, 0.95), rgba(246, 235, 212, 0.95));
+    }
+
+    .quote-card p {
+      margin: 0;
+      font-size: 1.08rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+      padding-bottom: 56px;
+    }
+
+    .panel {
+      padding: 32px;
+    }
+
+    .section-heading {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 18px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+    }
+
+    .key-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 6px;
+    }
+
+    .point {
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 240, 0.82);
+    }
+
+    .point strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1rem;
+      color: var(--accent-dark);
+    }
+
+    .point p,
+    .panel p,
+    .story-page p {
+      margin: 0 0 16px;
+    }
+
+    .point p:last-child,
+    .panel p:last-child,
+    .story-page p:last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .toc a {
+      text-decoration: none;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      background: rgba(255, 251, 244, 0.82);
+      color: var(--accent-dark);
+      font-size: 0.95rem;
+    }
+
+    .image-rail {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .story-figure-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px;
+      margin: 22px 0;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .map-card {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 241, 0.92);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .map-button {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: zoom-in;
+      text-align: inherit;
+      color: inherit;
+      font: inherit;
+    }
+
+    .map-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      object-position: center;
+      background: #e8dcc3;
+    }
+
+    .map-card figcaption {
+      padding: 14px 16px 16px;
+      font-size: 0.94rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .map-card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent-dark);
+      font-size: 1rem;
+    }
+
+    .image-modal[hidden] {
+      display: none;
+    }
+
+    .image-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background: rgba(22, 15, 10, 0.82);
+      backdrop-filter: blur(6px);
+    }
+
+    .image-modal-inner {
+      position: relative;
+      width: min(96vw, 1500px);
+      max-height: 94vh;
+      padding: 18px;
+      border: 1px solid rgba(255, 248, 236, 0.22);
+      background: rgba(35, 24, 16, 0.92);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    .image-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 248, 236, 0.2);
+      background: rgba(255, 248, 236, 0.08);
+      color: #fff7ea;
+      font-size: 1.6rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .image-modal-close:hover,
+    .image-modal-close:focus-visible,
+    .map-button:focus-visible {
+      outline: 2px solid #f2d8a2;
+      outline-offset: 2px;
+    }
+
+    .image-modal img {
+      display: block;
+      width: 100%;
+      max-height: calc(94vh - 92px);
+      object-fit: contain;
+      background: #1b130d;
+    }
+
+    .image-modal-caption {
+      margin-top: 12px;
+      color: #f0e4d0;
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .story-stack {
+      display: grid;
+      gap: 20px;
+    }
+
+    .story-page {
+      padding: 28px;
+      background:
+        linear-gradient(180deg, rgba(255, 252, 246, 0.96), rgba(247, 239, 226, 0.96)),
+        repeating-linear-gradient(
+          0deg,
+          rgba(94, 49, 23, 0.035) 0,
+          rgba(94, 49, 23, 0.035) 1px,
+          transparent 1px,
+          transparent 32px
+        );
+    }
+
+    .page-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--muted);
     }
 
-    a {
-      color: var(--accent);
+    .story-title {
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      margin-bottom: 8px;
+    }
+
+    .story-date {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .note {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 0 0 56px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 880px) {
+      .masthead,
+      .intro-grid,
+      .key-points,
+      .image-rail,
+      .story-figure-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy,
+      .meta-card,
+      .quote-card,
+      .panel,
+      .story-page {
+        padding: 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <section>
-      <p class="eyebrow">Barton History</p>
-      <h1>Barton local history, preserved and shared.</h1>
+  <header class="hero">
+    <div class="page masthead">
+      <section class="hero-copy" aria-labelledby="page-title">
+        <p class="eyebrow">Barton History Memoir Archive</p>
+        <h1 id="page-title">Dad's Life From Birth to Marriage</h1>
+        <p class="subtitle">A family memoir written in Winter 2002 and preserved here as part of Barton History.</p>
+        <p class="lede">
+          This page presents a firsthand recollection of childhood, family routines, neighborhood adventure, and daily
+          life in and around St. Louis and Gardenville during the 1930s and 1940s.
+        </p>
+      </section>
+
+      <div class="hero-meta" aria-label="Story details">
+        <aside class="meta-card">
+          <div>
+            <span class="meta-label">Story Type</span>
+            <div class="meta-value">Family memoir and local history</div>
+          </div>
+          <div>
+            <span class="meta-label">Written</span>
+            <div class="meta-value">Winter of 2002</div>
+          </div>
+          <div>
+            <span class="meta-label">Begins</span>
+            <div class="meta-value">Birth on January 6, 1933</div>
+          </div>
+          <div>
+            <span class="meta-label">Setting</span>
+            <div class="meta-value">St. Louis, Gardenville, Gravois, and Jefferson County</div>
+          </div>
+        </aside>
+
+        <aside class="quote-card">
+          <p>
+            "I had the world by the tail. Empty lots all around our house. My friends and I would let our imagination
+            run wild."
+          </p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="page content-grid">
+    <section class="panel intro-grid" aria-labelledby="overview-title">
+      <div>
+        <h2 class="section-heading" id="overview-title">An American childhood remembered in detail</h2>
+        <p>
+          The memoir moves from birth and early family life into the texture of ordinary days: a modest house on Acorn
+          Avenue, a coal furnace, handmade cooling contraptions in the kitchen, shopping trips, backyard animals,
+          radio programs, summer rides for ice cream, winter forts, and neighborhood games run entirely by children.
+        </p>
+        <p>
+          What gives the piece its charge is the level of lived detail. The story records not just dates and places,
+          but how a household worked, what a yard looked like, how a meal felt in hot weather, and what freedom
+          sounded like before television and air conditioning became normal.
+        </p>
+        <nav class="toc" aria-label="Page navigation">
+          <a href="#story-highlights">Highlights</a>
+          <a href="#full-story">Full story</a>
+          <a href="#page-1">Page 1</a>
+          <a href="#page-2">Page 2</a>
+          <a href="#page-3">Page 3</a>
+        </nav>
+      </div>
+
+      <div class="key-points">
+        <article class="point">
+          <strong>Family home</strong>
+          <p>A remembered house on Acorn Avenue, with a porch, garden, garage, coal stoker, and a lot big enough to define childhood.</p>
+        </article>
+        <article class="point">
+          <strong>Grandparents</strong>
+          <p>Grandma and Grandpa anchor the story through cooking, sewing, shift work at Anheuser-Busch, and constant practical ingenuity.</p>
+        </article>
+        <article class="point">
+          <strong>Neighborhood freedom</strong>
+          <p>Forts, games, smoking experiments, fruit theft, fights, and truce all unfold in a world where children organized themselves.</p>
+        </article>
+        <article class="point">
+          <strong>Historical texture</strong>
+          <p>The memoir quietly captures a time before home television and air conditioning reshaped everyday American life.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="story-highlights" aria-labelledby="highlights-title">
+      <h2 class="section-heading" id="highlights-title">Highlights from the memoir</h2>
       <p>
-        Barton History is dedicated to documenting the people, places, records, and stories that shape the history of
-        Barton and its surrounding community.
+        The opening frames the story as an inheritance for future generations, a way of explaining habits, strengths,
+        and shortcomings by tracing them back through family life. From there it quickly becomes concrete: an early
+        birth hour, a remembered address, the shape of a yard, a barn that no longer stands, and the small rituals of
+        a household that felt complete and vivid.
       </p>
       <p>
-        This website will feature historical research, archival material, community memory, and resources for anyone
-        exploring Barton's past.
+        Some of the most memorable passages turn on invention and adaptation. A washer motor and propeller become a
+        dinner fan. Discarded grain becomes feed for backyard animals. Hot evenings become drives for ice cream. The
+        story is full of people making life work with what they had, and doing it with humor.
+      </p>
+      <p>
+        The childhood scenes carry the energy of open lots and unsupervised play. The games, homemade weapons, comic
+        book blackmail, neighborhood fights, and immediate reconciliation all build a portrait of freedom that is both
+        affectionate and unsentimental.
       </p>
 
-      <h2>What you will find here</h2>
+      <div class="image-rail" aria-label="Story locations">
+        <figure class="map-card">
+          <button
+            class="map-button"
+            type="button"
+            data-modal-image="home-lakewood.PNG"
+            data-modal-alt="Modern map view of the Lakewood Avenue and Gravois Road area connected to the story's birthplace."
+            data-modal-caption="Lakewood &amp; Gravois. The memoir begins near the corner of Lakewood and Gravois, where the author says he was born at his great grandparents' house."
+            aria-label="Open larger view of Lakewood and Gravois map"
+          >
+            <img
+              src="home-lakewood.PNG"
+              alt="Modern map view of the Lakewood Avenue and Gravois Road area connected to the story's birthplace."
+            >
+          </button>
+          <figcaption>
+            <strong>Lakewood &amp; Gravois</strong>
+            The memoir begins near the corner of Lakewood and Gravois, where the author says he was born at his great
+            grandparents' house.
+          </figcaption>
+        </figure>
+
+        <figure class="map-card">
+          <button
+            class="map-button"
+            type="button"
+            data-modal-image="home-acorn.PNG"
+            data-modal-alt="Modern aerial view of 8017 Acorn Avenue with the lot outlined, showing the childhood home site described in the memoir."
+            data-modal-caption="8017 Acorn Avenue. This view helps place the wedge-shaped Acorn Avenue lot that becomes the center of the childhood memories in the story."
+            aria-label="Open larger view of 8017 Acorn Avenue map"
+          >
+            <img
+              src="home-acorn.PNG"
+              alt="Modern aerial view of 8017 Acorn Avenue with the lot outlined, showing the childhood home site described in the memoir."
+            >
+          </button>
+          <figcaption>
+            <strong>8017 Acorn Avenue</strong>
+            This view helps place the wedge-shaped Acorn Avenue lot that becomes the center of the childhood memories in
+            the story.
+          </figcaption>
+        </figure>
+
+        <figure class="map-card">
+          <button
+            class="map-button"
+            type="button"
+            data-modal-image="home-heegee.PNG"
+            data-modal-alt="Modern satellite map of the Heege Road area showing the neighborhood around the family home described in the memoir."
+            data-modal-caption="Heege Road Area. The wider neighborhood context around Acorn Avenue, empty lots, and the routes that shaped everyday life in the memoir."
+            aria-label="Open larger view of Heege Road area map"
+          >
+            <img
+              src="home-heegee.PNG"
+              alt="Modern satellite map of the Heege Road area showing the neighborhood around the family home described in the memoir."
+            >
+          </button>
+          <figcaption>
+            <strong>Heege Road Area</strong>
+            The wider neighborhood context around Acorn Avenue, empty lots, and the routes that shaped everyday life in
+            the memoir.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel" id="full-story" aria-labelledby="story-title-section">
+      <h2 class="section-heading" id="story-title-section">Full story</h2>
       <p>
-        Visitors will be able to explore local history articles, historical records, timelines, photographs, and
-        research resources connected to Barton.
+        The complete text from <a href="full-story.txt">full-story.txt</a> is presented below in-page for reading and
+        indexing.
       </p>
 
-      <h2>Website status</h2>
-      <p class="status">
-        The full site is currently in development. Visit
-        <a href="https://barton-history.org/">barton-history.org</a>
-        for updates as new historical content is published.
+      <div class="story-stack">
+        <article class="story-page" id="page-1">
+          <div class="page-label">Page 01</div>
+          <h3 class="story-title">Dad's life from birth to marriage</h3>
+          <p class="story-date">Winter of 2002</p>
+          <p>
+            I am writing this because I want the future generations which can be attributed to me and Mom (assuming
+            this lasts that long) to know why they do the things they do. It is not their fault. They are free to
+            blame me for whatever shortcomings they may have but they can take credit for all the good things they
+            accomplish which I am sure will be quite lengthy. The 1950s were probably the greatest decade that ever
+            existed for the good old USA and I am happy to say that our heyday was right in the middle.
+          </p>
+          <p>
+            I was born at Great Grandma and Great Grandpa Ortner's (Grandma Barton's parents) house on 6 Jan. 1933 at
+            about 5 am. (Always was an early riser). Great Grandpa and Great Grandma lived at the corner of Lakewood
+            and Gravois facing Gravois. The house was across from New mount Sinai cemetery and had a terrace about 3
+            feet high to the Gravois road. The house had a barn, and a chicken coup but was razed many years ago. So
+            my memory is rather sketchy. At 11 months, I weighed 30 pounds which made Grandma Barton very proud ---
+            fat was "in" during those days. She reminded me how cute I was at that weight until I was entering my
+            double digit years.
+          </p>
+          <figure class="map-card">
+            <button
+              class="map-button"
+              type="button"
+              data-modal-image="home-lakewood.PNG"
+              data-modal-alt="Modern map showing Lakewood Avenue and Gravois Road, the birthplace location described in the memoir."
+              data-modal-caption="Birthplace setting. The modern intersection gives today's reader a visual anchor for the memoir's opening scene."
+              aria-label="Open larger view of birthplace setting map"
+            >
+              <img
+                src="home-lakewood.PNG"
+                alt="Modern map showing Lakewood Avenue and Gravois Road, the birthplace location described in the memoir."
+              >
+            </button>
+            <figcaption>
+              <strong>Birthplace setting</strong>
+              The modern intersection gives today's reader a visual anchor for the memoir's opening scene.
+            </figcaption>
+          </figure>
+          <p>
+            At about 1.5 years old, we moved to 8017 Acorn Ave. in Gardenville off Heege road. We lived there for
+            about 10 years. It was a neat 2 bedroom modest home with a porch running across the entire front of the
+            house. The lot was wedge shaped with the wide part on the right when facing the property. An oversized one
+            car plus detached garage was on the left side of the property. A fence separated our yard from the small
+            truck farm behind us. The inside consisted of a living room, dining room, kitchen, master bedroom, my
+            bedroom, one bath off the master bedroom and a screened side porch which was used for sleeping in the
+            summer. The basement exit was beneath the porch. Only a half basement under the house with most of the
+            space beneath being a crawl space. Scared the H --- out of me till we moved. We had a gravity furnace with
+            a coal stoker installed by Grandpa. Worked well too except when it ran out of coal which was my job to keep
+            filled. Grandma kept the house immaculate. Grandpa did a lot of work on the inside. He wallpapered all the
+            rooms, installed a beautiful linoleum floor in the kitchen with an inlaid star in the exact center and a
+            thin inlaid one inch wide line about one foot from the wall along the perimeter. He installed an old
+            washer motor and a small two bladed propeller in the upper right rear of the kitchen at the ceiling to cool
+            us while we ate. No conversation, and you had too keep the food from blowing away but you were cool at
+            dinner in the summer (home air conditioners were not invented yet). Grandpa worked the swing shift for 38
+            years at Anheuser Busch. One week days: the next afternoons and the last nights. Both parents were very
+            comfortable with this arrangement. Two weeks out of three Grandma was home with me in the evenings and she
+            always listened to Lights Out, Inner Sanctum, and such ---- scared the dickens out of both of us but we
+            listened faithfully week after week (television was not developed for home use yet-Thank You God).
+          </p>
+          <div class="story-figure-grid" aria-label="Acorn Avenue images">
+            <figure class="map-card">
+              <button
+                class="map-button"
+                type="button"
+                data-modal-image="home-acorn.PNG"
+                data-modal-alt="Aerial view of 8017 Acorn Avenue with the property outlined in red."
+                data-modal-caption="The Acorn Avenue lot. The outlined parcel echoes the memoir's unusually specific description of the wedge-shaped property."
+                aria-label="Open larger view of the Acorn Avenue lot"
+              >
+                <img
+                  src="home-acorn.PNG"
+                  alt="Aerial view of 8017 Acorn Avenue with the property outlined in red."
+                >
+              </button>
+              <figcaption>
+                <strong>The Acorn Avenue lot</strong>
+                The outlined parcel echoes the memoir's unusually specific description of the wedge-shaped property.
+              </figcaption>
+            </figure>
+
+            <figure class="map-card">
+              <button
+                class="map-button"
+                type="button"
+                data-modal-image="home-heegee.PNG"
+                data-modal-alt="Wider map of the Heege Road and Acorn Avenue neighborhood described in the memoir."
+                data-modal-caption="The neighborhood around home. A wider view of Heege Road and the surrounding streets helps situate the truck farm, empty lots, and routes described in the story."
+                aria-label="Open larger view of the neighborhood around home"
+              >
+                <img
+                  src="home-heegee.PNG"
+                  alt="Wider map of the Heege Road and Acorn Avenue neighborhood described in the memoir."
+                >
+              </button>
+              <figcaption>
+                <strong>The neighborhood around home</strong>
+                A wider view of Heege Road and the surrounding streets helps situate the truck farm, empty lots, and
+                routes described in the story.
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            Grandpa built a pen behind the garage with a trap door entrance for chickens etc. We had chickens, ducks,
+            rabbits and mice. Grandpa made metal pans for the animals to swim and
+          </p>
+        </article>
+
+        <article class="story-page" id="page-2">
+          <div class="page-label">Page 02</div>
+          <p>
+            drink. He confiscated grain from AB to feed the animals. When was grain was old or wet or damaged they
+            discarded it and grandpa acquired it. Grandma was happy to be a housewife and cooked fabulous meals for the
+            big guy who scaled about 270 pounds off and on until I left home. Many Saturdays each month Grandpa,
+            Grandma and I would go shopping to Cherokee street and/or on Gravois starting at Bates. Grandpa and I would
+            sit in the car while grandma went from store to store up to and sometimes past Morganford Rd. and return.
+            We played cards either War or Rummy or Seven and a half. 7 and a half was similar to blackjack with 8,9
+            and10s removed and picture cards counted one half. Grandma did a lot of sewing and mending and was a
+            pretty good seamstress on the sewing machine. She made curtains, darned socks, fixed tears, etc, etc. Even
+            made some of her own clothing.
+          </p>
+          <p>
+            I had the world by the tail. Empty lots all around our house. My friends and I would let our imagination
+            run wild. We played war, Cowboys and Indians, dug underground lairs, made traps in the woods, built forts,
+            climbed huge oak trees, stole fruit from peoples trees, made bows and arrows, and spears out of holly
+            hocks and other straight weeds, made racers and carts, played ball, smoked cigarettes, weeds, string and
+            leafs. Even bought a pack of Marvels cigarettes for a dime from time to time. We were caught smoking by
+            one of our friends Dad once and had to supply him with comic books for a time or he would tell our
+            parents. We were about as much Huckleberry Finn as you could get. Never serious trouble but trouble
+            nonetheless.
+          </p>
+          <p>
+            In the summer when I was very young, Grandma would heat water and put a washtub out in the yard, fill it
+            with tepid water and let me splash around till I emptied the tub. Served two purposes --- kept me at bay
+            and watered the yard. On a warm evening when Grandpa was home, they would decide to take a ride or go to
+            the movie which were advertised as 20 degrees cooler, as I said, there were no home air conditioners at
+            that time. If we took a ride, Grandma would spell ice cream and I of course knew what that meant and we
+            would stop at Velvet Freeze at Gravois and Weber road. We would ride down Gravois or Highway 21, eating our
+            ice cream, to the far reaches of Jefferson county and sometimes down Rock Creek road where Grandpa is
+            buried in St. John's cemetery.
+          </p>
+          <p>
+            Winter brought more fun. Steep hills and little traveled streets allowed us to build snowmen, ride sleds,
+            build elaborate snow forts with a cache of snowballs ready for the attack that was sure to come from a
+            neighboring fort. Many of the older neighbors had a front row seat to all of this carrying on and provided
+            us with hot chocolate and cookies from time to time. Needless to say these were great days, no one settled
+            our arguments for us, if we disagreed we had a fight and it was settled. No weapons or any parental help.
+            When the fight was over the play began again. In the summer, we played ball on Hilda Ave, the street on
+            the other side of the empty lot across from our house. We played scrub, Indian ball, bottlecaps and
+            corkball. All organized and run by us. No help from anyone and it was great. About the age of 8, grandpa
+            offered me 50 cents for the school picnic if I mowed the lawn. Big mistake, because the lawn was mine
+            until I left for college. And our lawn on Acorn was huge. Grandpa cleared the rear three-fourths of the
+            lot on our rightside next to ours and put the rear half into a fenced garden with all kinds of vegetables
+            and the front half into a yard for me to mow. (They used to 'can' and make preserves etc. The whole garden
+            was tilled by hand). The lawnmower was the old type mower that you see in museums today. The mower
+            consisted of 5 or 6 blades in the shape of a horizontal cylinder with a wheel on either end connected to a
+            T-shaped
+          </p>
+        </article>
+
+        <article class="story-page" id="page-3">
+          <div class="page-label">Page 03</div>
+          <p>
+            The source text currently ends here in <a href="full-story.txt">full-story.txt</a>, mid-sentence after
+            "T-shaped". This page preserves all of the text presently available in the file.
+          </p>
+        </article>
+      </div>
+
+      <p class="note">
+        Editorial note: the source file appears to end mid-sentence, and the website preserves the text exactly up to
+        that point while presenting it in a readable format.
       </p>
     </section>
   </main>
+
+  <footer>
+    Barton History preserves family memory, local detail, and the texture of everyday life that formal histories often miss.
+  </footer>
+
+  <div class="image-modal" id="image-modal" hidden>
+    <div class="image-modal-inner" role="dialog" aria-modal="true" aria-labelledby="image-modal-caption">
+      <button class="image-modal-close" type="button" id="image-modal-close" aria-label="Close image view">&times;</button>
+      <img id="image-modal-img" src="" alt="">
+      <div class="image-modal-caption" id="image-modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var modal = document.getElementById("image-modal");
+      var modalImage = document.getElementById("image-modal-img");
+      var modalCaption = document.getElementById("image-modal-caption");
+      var closeButton = document.getElementById("image-modal-close");
+      var triggers = document.querySelectorAll(".map-button");
+      var lastTrigger = null;
+
+      function closeModal() {
+        modal.hidden = true;
+        modalImage.src = "";
+        modalImage.alt = "";
+        modalCaption.textContent = "";
+        document.body.style.overflow = "";
+        if (lastTrigger) {
+          lastTrigger.focus();
+        }
+      }
+
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+          lastTrigger = trigger;
+          modalImage.src = trigger.getAttribute("data-modal-image");
+          modalImage.alt = trigger.getAttribute("data-modal-alt") || "";
+          modalCaption.textContent = trigger.getAttribute("data-modal-caption") || "";
+          modal.hidden = false;
+          document.body.style.overflow = "hidden";
+          closeButton.focus();
+        });
+      });
+
+      closeButton.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && !modal.hidden) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
