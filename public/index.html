@@ -346,6 +346,46 @@
       font-size: 1rem;
     }
 
+    .story-photo-feature {
+      margin: 24px 0;
+      position: relative;
+    }
+
+    .story-photo-feature::before {
+      content: "First family home";
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 1;
+      padding: 7px 11px;
+      background: rgba(35, 24, 16, 0.78);
+      color: #fff7ea;
+      border: 1px solid rgba(255, 248, 236, 0.22);
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .story-photo-feature img {
+      max-height: 460px;
+      object-position: center 44%;
+    }
+
+    .story-photo-feature figcaption {
+      display: grid;
+      gap: 6px;
+      padding: 18px 20px 20px;
+      background:
+        linear-gradient(180deg, rgba(255, 252, 246, 0.95), rgba(242, 231, 210, 0.92));
+    }
+
+    .story-photo-feature .photo-kicker {
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
     .image-modal[hidden] {
       display: none;
     }
@@ -478,6 +518,10 @@
       .panel,
       .story-page {
         padding: 24px;
+      }
+
+      .story-photo-feature img {
+        max-height: 360px;
       }
     }
 
@@ -1287,6 +1331,21 @@
             old enough to remember Maricopa and our move to St.Louis (except Stacy who was only one and a half at the
             time).
           </p>
+          <figure class="map-card story-photo-feature">
+            <button class="map-button" type="button" data-modal-image="home-5122-Maricopa-Street.PNG"
+              data-modal-alt="Front view of the house at 5122 Maricopa Street in Torrance, California, the family's first house."
+              data-modal-caption="5122 Maricopa Street, Torrance. The family's first house, reached after the early Los Angeles apartments and the years of saving described on this page."
+              aria-label="Open larger view of the house at 5122 Maricopa Street">
+              <img src="home-5122-Maricopa-Street.PNG"
+                alt="Front view of the house at 5122 Maricopa Street in Torrance, California, the family's first house.">
+            </button>
+            <figcaption>
+              <span class="photo-kicker">Torrance, California</span>
+              <strong>5122 Maricopa Street</strong>
+              The family's first house gives the closing pages a real place to land: the home they saved for before
+              the later move back to St. Louis.
+            </figcaption>
+          </figure>
           <p>
             That my Darling daughters is a condensed version of the life of your father. A life I am happy to be a
             large part of and ecstatic that each of you entered it when you did.
